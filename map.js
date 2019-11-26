@@ -8,11 +8,6 @@ import "./style.css"
 //data
 import { schools, libraries, workshops } from "./data/map_data.js"
 
-//images
-import Grads from "../../images/grads.png"
-import Library from "../../images/library.png"
-import DarkLogo from "../../images/yor_darklogo_cropped.png"
-
 const YORWorkshopMap = () => {
     const schoolMarkers = useRef([])
     const libraryMarkers = useRef([])
@@ -106,50 +101,12 @@ const YORWorkshopMap = () => {
             >
                 <div className="nav-links">
                     <br />
-                    <a className="yor-link" href="https://www.youthonrecord.org/"><img src={DarkLogo} alt="logo" /><br />Return to youthonrecord.org </a>
-                    <br /><Link to="/" className="yor-link">Return to YOR Data Home Page<span className="home-icon"><IconHome /></span></Link>
+                    <a className="yor-link" href="https://www.youthonrecord.org/">Return to youthonrecord.org </a>
+                    <br />
                     <br /><br /><br />
                     <div className="nav-control"><NavigationControl /></div>
                 </div>
-                {/* YOR */}
-                <Marker
-                    latitude={39.7323489}
-                    longitude={-105.0045854}
-                    offsetRight={35}
-                >   <div className="marker-container">
-                        <img src={DarkLogo} className="yor-marker" alt="youth on record alt logo" onClick={handleOpenYORPopup} />
-                        <div className="marker-popup" ref={el => yorRef.current = el} style={{ minWidth: "350px", maxWidth: "500px" }}>
-                            <h4 className="marker-popup-header">Youth On Record </h4>
-                            <hr style={{ width: "90%" }} />
-                            <img src="https://lh5.googleusercontent.com/p/AF1QipMpecP2181VVDv6XSyDn8wMyTJ-7_05Vo9oXooJ=w408-h272-k-no" style={{ width: "75%" }} alt="yor outside" />
-                            <p>1301 W 10th Ave, Denver, CO 80204</p>
-                            <h4 className="marker-popup-subheader">2019 Workshops @ Youth Media Studio:</h4>
-                            <div className="marker-table-wrapper">
-                                <table className="marker-popup-table" >
-                                    <thead>
-                                        <tr>
-                                            <th>Partner</th>
-                                            <th>Date</th>
-                                            <th>Youth Served</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {workshops.map((wrk, i) => (
-                                            <tr key={i}>
-                                                <td style={{ maxWidth: "250px", fontWeight: "bold" }}>{wrk.partner}</td>
-                                                <td>{wrk.date}</td>
-                                                <td>{wrk.students_served}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
-                            <hr style={{ width: "90%" }} />
-                            <em><a href="https://www.youthonrecord.org/">Website&nbsp;&nbsp;&nbsp;</a></em>
-                            <span className="marker-popup-close" onClick={handleCloseYORPopup} >&nbsp;&nbsp;&nbsp;Close </span>
-                        </div>
-                    </div>
-                </Marker>
+               
                 {/* SCHOOLS */}
                 {schools.map((school, i) => (
                     <Marker
@@ -159,7 +116,6 @@ const YORWorkshopMap = () => {
                     >
                         <div className="marker-container">
                             <div className="school-marker" onClick={handleOpenSchoolPopup(i)}>
-                                <img src={Grads} className="school-icon" alt="grads" />
                             </div>
                             <div className="marker-popup" ref={el => schoolMarkers.current[i] = el}>
                                 <h4 className="marker-popup-header">{school.name} </h4>
@@ -194,7 +150,6 @@ const YORWorkshopMap = () => {
                     >
                         <div className="marker-container">
                             <div className="library-marker" onClick={handleOpenLibraryPopup(i)}>
-                                <img src={Library} className="library-icon" alt="grads" />
                             </div>
                             <div className="marker-popup" ref={el => libraryMarkers.current[i] = el}>
                                 <h4 className="marker-popup-header">{lib.name} </h4>
@@ -221,6 +176,45 @@ const YORWorkshopMap = () => {
 
                     </Marker>
                 ))}
+                 {/* YOR */}
+                <Marker
+                    latitude={39.7323489}
+                    longitude={-105.0045854}
+                    offsetRight={35}
+                >   <div className="marker-container">
+                        <div className="school-marker" onClick={handleOpenYORPopup}/>
+                        <div className="marker-popup" ref={el => yorRef.current = el} style={{ minWidth: "350px", maxWidth: "500px" }}>
+                            <h4 className="marker-popup-header">Youth On Record </h4>
+                            <hr style={{ width: "90%" }} />
+                            <img src="https://lh5.googleusercontent.com/p/AF1QipMpecP2181VVDv6XSyDn8wMyTJ-7_05Vo9oXooJ=w408-h272-k-no" style={{ width: "75%" }} alt="yor outside" />
+                            <p>1301 W 10th Ave, Denver, CO 80204</p>
+                            <h4 className="marker-popup-subheader">2019 Workshops @ Youth Media Studio:</h4>
+                            <div className="marker-table-wrapper">
+                                <table className="marker-popup-table" >
+                                    <thead>
+                                        <tr>
+                                            <th>Partner</th>
+                                            <th>Date</th>
+                                            <th>Youth Served</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {workshops.map((wrk, i) => (
+                                            <tr key={i}>
+                                                <td style={{ maxWidth: "250px", fontWeight: "bold" }}>{wrk.partner}</td>
+                                                <td>{wrk.date}</td>
+                                                <td>{wrk.students_served}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr style={{ width: "90%" }} />
+                            <em><a href="https://www.youthonrecord.org/">Website&nbsp;&nbsp;&nbsp;</a></em>
+                            <span className="marker-popup-close" onClick={handleCloseYORPopup} >&nbsp;&nbsp;&nbsp;Close </span>
+                        </div>
+                    </div>
+                </Marker>
             </MapGL>
         </div >
     )
