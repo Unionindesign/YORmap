@@ -1,0 +1,146 @@
+.map-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.nav-control {
+	width: 30px;
+	margin: 0 0 0 200px;
+}
+
+.marker-popup {
+	background-color: #585858;
+	opacity: 0.7;
+	padding: 9px;
+	border-radius: 9px;
+	position: absolute;
+	right: 50;
+	visibility: hidden;
+	min-width: 200px;
+	max-width: 300px;
+}
+
+.marker-popup p {
+	color: white;
+	font-size: 0.8em;
+}
+.marker-popup a {
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	color: #afafaf;
+}
+.marker-popup a:hover {
+	color: #f9ad1b;
+}
+.marker-popup-header {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	line-height: 80%;
+	width: 100%;
+}
+.marker-popup-subheader {
+	color: #afafaf;
+	line-height: 1%;
+	text-align: left;
+	padding: 0 0 0 9px;
+}
+.marker-popup-list {
+	list-style: none;
+	color: #f2f2f2;
+	font-size: 0.8em;
+	text-align: left;
+	line-height: 80%;
+}
+.marker-table-wrapper {
+	height: 250px;
+	overflow: scroll;
+}
+.marker-container table {
+	text-align: left;
+	min-width: 300px;
+	max-width: 450px;
+	max-height: 450px;
+	overflow-y: scroll;
+	font-size: 0.75em;
+}
+.marker-popup-table {
+	width: 750px;
+}
+.marker-popup-table thead {
+	border-bottom: 1 px solid #afafaf;
+}
+.marker-popup-table tbody {
+	text-align: left;
+	min-width: 400px;
+	max-width: 450px;
+	height: 250px;
+	/* overflow-y: scroll; */
+}
+.marker-popup-table th {
+	color: white;
+	font-weight: bold;
+}
+.marker-popup-table td {
+	color: #f2f2f2;
+}
+.marker-popup-list a {
+	color: white;
+}
+.marker-popup-close {
+	color: #afafaf;
+	font-weight: bold;
+	font-style: italic;
+	vertical-align: top;
+}
+.marker-popup-close:hover {
+	color: #f9ad1b;
+	cursor: pointer;
+}
+.school-marker {
+	background-color: #f9ad1b;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 3px solid black;
+}
+.school-marker:hover,
+.library-marker:hover {
+	cursor: pointer;
+	background-color: #82c341;
+}
+.school-icon {
+	width: 25px;
+}
+.library-marker {
+	background-color: #f91bb6;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 3px solid black;
+}
+.library-icon {
+	width: 21px;
+}
+.yor-marker {
+	width: 45px;
+}
+.home-icon {
+	color: #f9ad1b;
+	float: right;
+	margin: 0px 5px 0 0px;
+}
+.home-icon:hover,
+.yor-link:hover {
+	cursor: pointer;
+	color: #82c341;
+}
+.yor-link {
+	color: #f9ad1b;
+	margin: 0px 20px 0 0;
+	padding-top: 20px;
+}
+.nav-links {
+	float: right;
+}
