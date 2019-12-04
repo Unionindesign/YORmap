@@ -36,7 +36,7 @@ const YORWorkshopMap = () => {
             y: -220
 
         }, {
-            autoAlpha: 0.85,
+            autoAlpha: 0.98,
             scale: 1, visibility: "visible",
             ease: Power3.easeInOut,
             y: -200
@@ -57,7 +57,7 @@ const YORWorkshopMap = () => {
             x: -100,
             y: -220
         }, {
-            autoAlpha: 0.85,
+            autoAlpha: 0.98,
             scale: 1, visibility: "visible",
             ease: Power3.easeInOut,
             y: -200
@@ -78,7 +78,7 @@ const YORWorkshopMap = () => {
             x: -100,
             y: -420
         }, {
-            autoAlpha: 0.85,
+            autoAlpha: 0.98,
             scale: 1, visibility: "visible",
             ease: Power3.easeInOut,
             y: -500
@@ -186,7 +186,7 @@ const YORWorkshopMap = () => {
                         <div className="marker-popup" ref={el => yorRef.current = el} style={{ minWidth: "350px", maxWidth: "500px" }}>
                             <h4 className="marker-popup-header">Youth On Record </h4>
                             <hr style={{ width: "90%" }} />
-                            <img src="https://lh5.googleusercontent.com/p/AF1QipMpecP2181VVDv6XSyDn8wMyTJ-7_05Vo9oXooJ=w408-h272-k-no" style={{ width: "75%" }} alt="yor outside" />
+                      
                             <p>1301 W 10th Ave, Denver, CO 80204</p>
                             <h4 className="marker-popup-subheader">2019 Workshops @ Youth Media Studio:</h4>
                             <div className="marker-table-wrapper">

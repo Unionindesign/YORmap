@@ -6,11 +6,11 @@ const schools = [
         classes: [
             {
                 class_title: "Introduction to Music Production",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             },
             {
                 class_title: "Advance Production Techniques",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -38,7 +38,7 @@ const schools = [
         classes: [
             {
                 class_title: "Introduction to Music Production",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -62,11 +62,11 @@ const schools = [
         classes: [
             {
                 class_title: "Introduction to Music Production",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             },
             {
                 class_title: "Advance Production Techniques",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -86,7 +86,7 @@ const schools = [
         classes: [
             {
                 class_title: "Introduction to Music Production",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -110,7 +110,7 @@ const schools = [
         classes: [
             {
                 class_title: "Introduction to Music Production",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -130,11 +130,11 @@ const schools = [
         classes: [
             {
                 class_title: "Introduction to Music Production",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             },
             {
                 class_title: "Visual Representation",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -154,7 +154,7 @@ const schools = [
         classes: [
             {
                 class_title: "Creative Writing",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -174,11 +174,11 @@ const schools = [
         classes: [
             {
                 class_title: "Introduction to Ethnic Studies",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             },
             {
                 class_title: "Music Production",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -198,11 +198,11 @@ const schools = [
         classes: [
             {
                 class_title: "Intro to Creative Writing",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             },
             {
                 class_title: "Social Justice",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -225,7 +225,7 @@ const libraries = [
         classes: [
             {
                 class_title: "Beats Lab",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -245,7 +245,7 @@ const libraries = [
         classes: [
             {
                 class_title: "Beats Lab",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -265,7 +265,7 @@ const libraries = [
         classes: [
             {
                 class_title: "Beats Lab",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
@@ -305,7 +305,7 @@ const libraries = [
         classes: [
             {
                 class_title: "single day kick off",
-                class_link: ""
+                class_link: "https://www.youthonrecord.org/programs/credit-classes"
             }
         ],
         teachers: [
